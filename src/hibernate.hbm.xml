@@ -1,0 +1,123 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="model">
+
+    <class name="AcqReport" table="ACQ">
+
+        <id name="id" type="long">
+            <column name="ID"/>
+            <generator class="sequence-identity">
+                <param name="sequence">ACQ_SEQUENCE</param>
+            </generator>
+        </id>
+
+        <property name="rowNo" type="string">
+            <column name="ROWNO"/>
+        </property>
+
+        <property name="processType" type="java.lang.String">
+            <column name="process_type"/>
+        </property>
+
+        <property name="transactionDate" type="java.lang.String">
+            <column name="txn_date"/>
+        </property>
+
+        <property name="transactionTime" type="java.lang.String">
+            <column name="txn_time"/>
+        </property>
+
+        <property name="stan" type="java.lang.String">
+            <column name="stan"/>
+        </property>
+
+        <property name="cardNumber" type="java.lang.String">
+            <column name="card_number"/>
+        </property>
+
+        <property name="issuerCode" type="java.lang.String">
+            <column name="issuer_code"/>
+        </property>
+
+        <property name="terminalNo" type="java.lang.String">
+            <column name="terminal_no"/>
+        </property>
+
+        <property name="amount" type="java.lang.String">
+            <column name="amount"/>
+        </property>
+
+        <property name="deviceType" type="java.lang.String">
+            <column name="device_type"/>
+        </property>
+
+        <property name="charge" type="java.lang.String">
+            <column name="charge"/>
+        </property>
+
+        <property name="exteraInfo1" type="java.lang.String">
+            <column name="extera_info_1"/>
+        </property>
+
+        <property name="functionCode" type="java.lang.String">
+            <column name="function_code"/>
+        </property>
+
+        <property name="ledgerDate" type="java.lang.String">
+            <column name="ledger_date"/>
+        </property>
+
+        <property name="ledgerNoShetab" type="java.lang.String">
+            <column name="ledger_no_shetab"/>
+        </property>
+
+        <property name="issuerCcyAmount" type="java.lang.String">
+            <column name="issuer_ccy_amount"/>
+        </property>
+
+        <property name="issuerCcy" type="java.lang.String">
+            <column name="issuer_ccy"/>
+        </property>
+
+        <property name="extraInfo2" type="java.lang.String">
+            <column name="extera_info_2"/>
+        </property>
+
+        <property name="extraInfo3" type="java.lang.String">
+            <column name="extera_info_3"/>
+        </property>
+
+        <property name="extraInfo4" type="java.lang.String">
+            <column name="extera_info_4"/>
+        </property>
+
+        <property name="extraInfo5" type="java.lang.String">
+            <column name="extera_info_5"/>
+        </property>
+
+        <property name="extraInfo6" type="java.lang.String">
+            <column name="extera_info_6"/>
+        </property>
+
+        <property name="extraInfo7" type="java.lang.String">
+            <column name="extera_info_7"/>
+        </property>
+
+        <property name="extraInfo8" type="java.lang.String">
+            <column name="extera_info_8"/>
+        </property>
+
+        <property name="fileType" type="java.lang.String">
+            <column name="file_type"/>
+        </property>
+
+        <property name="userId" type="java.lang.String">
+            <column name="user_id"/>
+        </property>
+
+    </class>
+
+</hibernate-mapping>
